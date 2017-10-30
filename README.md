@@ -2,15 +2,14 @@
 
 * [Introduction](#introduction) (read it, please, it's not typical *blah blah blah*)
 * [Raw PHP coding rules](raw-php-coding-rules/README.md#raw-php-coding-rules)
-    * [Naming conventions](raw-php-coding-rules/README.md#naming-conventions)
     * [Brief or verbose, that is the question](raw-php-coding-rules/README.md#brief-or-verbose-that-is-the-question)
-    * [Coding style](raw-php-coding-rules/README.md#coding-style)
     * [Namespaces and autoloading](raw-php-coding-rules/README.md#namespaces-and-autoloading)
-* [PHP tips and good practices](php-tips-and-good-practices/README.md#php-tips-and-good-practices)
-    * [Validating input data](php-tips-and-good-practices/README.md#validating-input-data)
-    * [Declaring types and PHPDoc annotations](php-tips-and-good-practices/README.md#declaring-types-and-phpdoc-annotations)
-    * [No hardcoded values!](php-tips-and-good-practices/README.md#no-hardcoded-values)
-    * [No external assets!](php-tips-and-good-practices/README.md#no-external-assets)
+    * [Coding style](raw-php-coding-rules/README.md#coding-style)
+    * [Naming conventions](raw-php-coding-rules/README.md#naming-conventions)
+    * [Declaring types and PHPDoc annotations](raw-php-coding-rules/README.md#declaring-types-and-phpdoc-annotations)
+    * [No hardcoded values!](raw-php-coding-rules/README.md#no-hardcoded-values)
+    * [No external assets!](raw-php-coding-rules/README.md#no-external-assets)
+    * [Miscellaneous](raw-php-coding-rules/README.md#miscellaneous)
 * [Security. Serious business...](security-serious-business/README.md#security-serious-business)
     * [The Basics](security-serious-business/README.md#the-basics)
     * [User input validating](security-serious-business/README.md#user-input-validating)
@@ -31,7 +30,7 @@
 
 # Introduction
 
-This document was created to help you keep your code consistent and clean. It covers basic PHP coding rules as well as Symfony-specific coding standards, which you are encouraged to follow for the greater good of us all and for the glory of the Company. Please, feel encouraged, or else.
+This document was created to help you keep your code consistent and clean. It covers basic PHP coding rules as well as Symfony-specific coding standards, which you are encouraged to follow for the greater good of us all and for the glory of The Company. Please, feel encouraged. Or else.
 
 **First thing you need to read**, is [Clean Code concepts for PHP](https://github.com/ucreate-marcinw/clean-code-php). It's a lot of reading, but it is a really valuable set of instructions and rules.
 

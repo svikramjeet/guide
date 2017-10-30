@@ -18,14 +18,29 @@ If you want to know more, feel free to dive into [OWASP's knowledge database](ht
     <b><a href="#top">↥ back to top</a></b>
 </div>
 
+
 ### User input validating
 
+This part alone could take tons of text, but we should cover here basics only, so just a mention: malicious user input may cause any of problems mentioned above, as well as many more, that's why it's important to sanitize it. 
 
-This part alone could take tons of text, but we should cover here basics only, so just a mention: malicious user input may cause any of problems mentioned above, as well as many more, that's why it's important to sanitize it. **Don't reinvent the wheel**, use existing mechanisms for avoiding XSS and similar. Remember, simple `addslashes()` will not work. And **always parametrize queries. Always.**
+Function arguments should be validated and invalid arguments should be handled by using default values (if possible) or throwing `\InvalidArgumentException()` with proper message.
+
+**NOTE**:
+
+ * **data coming directly from user should always be validated**. This applies to every piece of data from user side, including form data, URL/request parameters and everything else. Seriously, everything. Even if you save and/or use client's `User-Agent` header, validate it first.
+ * if you write internal function, which may be used by anyone else (or even you a couple of weeks later, when you may not remember everything perfectly), it should also contain input checking routines
+ * **client-side data validation is worth nothing** in terms of security. Always assume the user is a highly skilled hacker and tampers all requests
+
+**Don't reinvent the wheel**, use existing mechanisms for avoiding XSS and similar. Remember, simple `addslashes()` **will not work**.  
+
+And **always parametrize queries. Always.**
 
 <div align="right">
     <b><a href="#top">↥ back to top</a></b>
 </div>
+
+
+
 
 ### `Exec()`
 
@@ -54,5 +69,5 @@ Many times you will be tempted to use `/test/` route to test `testAction()` of `
 <b><a href="../README.md">INDEX</a></b>
 </div>
 <div align="left">
-<a href="../php-tips-and-good-practices/README.md"><b>PREVIOUS:</b> PHP tips and good practices</a>
+<a href="../raw-php-coding-rules/README.md"><b>PREVIOUS:</b> Raw PHP coding rules</a>
 </div>
